@@ -96,7 +96,7 @@ namespace WindowsFormsApp9
 					taxprice = 0;
 					break;
 			}
-
+			
 			string startday;
 			string endday;
 			DateTime sstartday;
@@ -105,7 +105,7 @@ namespace WindowsFormsApp9
 
 			if (allyear.Checked)
 			{
-
+				//選全年度 日期訂為今年的第一天及最後一天。
 				startday = new DateTime(DateTime.Now.Year, 1, 1,00,00,00).ToString("yyyy/MM/dd");
 				endday = new DateTime(DateTime.Now.Year, 12, 31,23,59,59).ToString("yyyy/MM/dd");
 				sstartday = new DateTime(DateTime.Now.Year, 1, 1);
@@ -117,7 +117,7 @@ namespace WindowsFormsApp9
 
 			else
 			{
-
+				//選期間 選取所選的質顯示 
 				startday = Dtpstart.Value.ToString("yyyy/MM/dd");
 				endday = Dtpend.Value.ToString("yyyy/MM/dd");
 				sstartday = Dtpstart.Value;
@@ -126,8 +126,9 @@ namespace WindowsFormsApp9
 
 
 			}
+			//算幾年
 			int countyearsnum;
-			countyearsnum = eendday.Year - sstartday.Year + 1;
+			countyearsnum = eendday.Year - sstartday.Year + 1;  //EX:2021-2015=6  但過了7年  所以要加1
 			int[] yearsrange = new int[countyearsnum];
 			int[] daynum = new int[countyearsnum];
 			bool fouryearonce;
