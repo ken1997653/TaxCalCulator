@@ -187,7 +187,7 @@ namespace WindowsFormsApp9
 
 					$"第{c + 1}筆" + Environment.NewLine + Environment.NewLine +
 					$"使用期間:從{choseyearday[c, 0].ToString("yyyy/MM/dd")}至{choseyearday[c, 1].ToString("yyyy/MM/dd")}" + Environment.NewLine + Environment.NewLine +
-					$"計算天數: {daysinyears[c]}" + Environment.NewLine + Environment.NewLine +
+					$"計算天數: {daysinyears[c]}天" + Environment.NewLine + Environment.NewLine +
 					$"用途: {choosetype}" + Environment.NewLine + Environment.NewLine +
 					$"汽缸CC數: {chooseccstyle}" + Environment.NewLine + Environment.NewLine +
 					$"計算公式:{taxprice}*{daysinyears[c]}/{daynum[c]}={taxprice * daysinyears[c] / daynum[c]}元" + Environment.NewLine + Environment.NewLine +
