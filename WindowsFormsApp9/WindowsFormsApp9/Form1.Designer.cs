@@ -59,7 +59,7 @@ namespace WindowsFormsApp9
 			this.label1.Cursor = System.Windows.Forms.Cursors.Default;
 			this.label1.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
 			this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.label1.Location = new System.Drawing.Point(146, 102);
+			this.label1.Location = new System.Drawing.Point(146, 111);
 			this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(90, 24);
@@ -112,7 +112,7 @@ namespace WindowsFormsApp9
 			this.allyear.Checked = true;
 			this.allyear.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.allyear.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.allyear.Location = new System.Drawing.Point(269, 103);
+			this.allyear.Location = new System.Drawing.Point(267, 112);
 			this.allyear.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
 			this.allyear.Name = "allyear";
 			this.allyear.Size = new System.Drawing.Size(81, 24);
@@ -127,7 +127,7 @@ namespace WindowsFormsApp9
 			this.ChooseTime.AutoSize = true;
 			this.ChooseTime.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.ChooseTime.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.ChooseTime.Location = new System.Drawing.Point(402, 103);
+			this.ChooseTime.Location = new System.Drawing.Point(411, 111);
 			this.ChooseTime.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
 			this.ChooseTime.Name = "ChooseTime";
 			this.ChooseTime.Size = new System.Drawing.Size(81, 24);
@@ -147,10 +147,10 @@ namespace WindowsFormsApp9
             "大客車",
             "自用小客車",
             "營業用小客車"});
-			this.usefor.Location = new System.Drawing.Point(269, 221);
+			this.usefor.Location = new System.Drawing.Point(256, 221);
 			this.usefor.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
 			this.usefor.Name = "usefor";
-			this.usefor.Size = new System.Drawing.Size(279, 23);
+			this.usefor.Size = new System.Drawing.Size(350, 23);
 			this.usefor.TabIndex = 6;
 			this.usefor.SelectedIndexChanged += new System.EventHandler(this.usefor_SelectedIndexChanged);
 			// 
@@ -160,10 +160,10 @@ namespace WindowsFormsApp9
 			this.ccstyle.FormattingEnabled = true;
 			this.ccstyle.Items.AddRange(new object[] {
             "請選擇"});
-			this.ccstyle.Location = new System.Drawing.Point(269, 284);
+			this.ccstyle.Location = new System.Drawing.Point(256, 282);
 			this.ccstyle.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
 			this.ccstyle.Name = "ccstyle";
-			this.ccstyle.Size = new System.Drawing.Size(279, 23);
+			this.ccstyle.Size = new System.Drawing.Size(350, 23);
 			this.ccstyle.TabIndex = 7;
 			this.ccstyle.SelectedIndexChanged += new System.EventHandler(this.ccstyle_SelectedIndexChanged);
 			// 
@@ -187,10 +187,10 @@ namespace WindowsFormsApp9
 			this.timeline.Controls.Add(this.Dtpstart);
 			this.timeline.Controls.Add(this.label6);
 			this.timeline.Controls.Add(this.label5);
-			this.timeline.Location = new System.Drawing.Point(202, 146);
+			this.timeline.Location = new System.Drawing.Point(202, 151);
 			this.timeline.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
 			this.timeline.Name = "timeline";
-			this.timeline.Size = new System.Drawing.Size(589, 57);
+			this.timeline.Size = new System.Drawing.Size(589, 52);
 			this.timeline.TabIndex = 15;
 			this.timeline.Visible = false;
 			// 
@@ -268,10 +268,10 @@ namespace WindowsFormsApp9
 			// Please
 			// 
 			this.Please.AutoSize = true;
-			this.Please.Font = new System.Drawing.Font("新細明體", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.Please.Location = new System.Drawing.Point(567, 241);
+			this.Please.Font = new System.Drawing.Font("新細明體", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.Please.Location = new System.Drawing.Point(623, 251);
 			this.Please.Name = "Please";
-			this.Please.Size = new System.Drawing.Size(0, 38);
+			this.Please.Size = new System.Drawing.Size(0, 34);
 			this.Please.TabIndex = 18;
 			// 
 			// result
