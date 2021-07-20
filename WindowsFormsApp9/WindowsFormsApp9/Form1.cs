@@ -53,8 +53,7 @@ namespace WindowsFormsApp9
 	
 		private void Calculate_Click(object sender, EventArgs e)
 		{
-			string startday;
-			string endday;
+			
 
 
 			if (usefor.SelectedItem.ToString() == "請選擇")
@@ -98,7 +97,8 @@ namespace WindowsFormsApp9
 					break;
 			}
 
-
+			string startday;
+			string endday;
 			DateTime sstartday;
 			DateTime eendday;
 
@@ -106,8 +106,8 @@ namespace WindowsFormsApp9
 			if (allyear.Checked)
 			{
 
-				startday = new DateTime(DateTime.Now.Year, 1, 1).ToString("yyyy/MM/dd");
-				endday = new DateTime(DateTime.Now.Year, 12, 31).ToString("yyyy/MM/dd");
+				startday = new DateTime(DateTime.Now.Year, 1, 1,00,00,00).ToString("yyyy/MM/dd");
+				endday = new DateTime(DateTime.Now.Year, 12, 31,23,59,59).ToString("yyyy/MM/dd");
 				sstartday = new DateTime(DateTime.Now.Year, 1, 1);
 				eendday = new DateTime(DateTime.Now.Year, 12, 31);
 
@@ -133,6 +133,7 @@ namespace WindowsFormsApp9
 			bool fouryearonce;
 			int threesixsix;
 			int[] daysinyears = new int[countyearsnum];
+		
 			DateTime[,] choseyearday = new DateTime[countyearsnum, 2];
 			TimeSpan countdays;
 			int[] taxpricerange = new int[countyearsnum];
@@ -153,7 +154,9 @@ namespace WindowsFormsApp9
 				daynum[c] = threesixsix;
 				if (c == 0)
 				{
-					choseyearday[c, 0] = sstartday;
+					
+					choseyearday[c, 0] = sstartday.Date;
+					
 				}
 				else
 					choseyearday[c, 0] = new DateTime(sstartday.Year + c, 1, 1);
@@ -209,6 +212,8 @@ namespace WindowsFormsApp9
 			this.Please.Text = "請先選擇用途!!";
 			this.Please.Visible = false;
 			this.result.Visible = true;
+			Dtpstart.Value = DateTime.Now;
+			Dtpend.Value = DateTime.Now;
 
 		}
 
